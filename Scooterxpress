@@ -1,0 +1,24 @@
+#load required packgaes
+#install.packages("ggplot2")
+#install.packages("Hmisc")
+library(ggplot2)
+library(foreign)
+install.packages("pacman")
+#load pacman packages
+library(pacman)
+#descriptive statistics for Scooer Xpress to show frquencies and required graphs
+#loading Scooter datasets from file
+# this data is from TechPointX talent team looking to launch their very own scooter rideshare service titled Xtern Xpress
+#Xtern’s scooter rideshare service will be released with all of the associated features soon and optimization stratgies are welcome
+# the variables in the dataset include
+data=read.csv('C:/Users/booth/Downloads/Xtern_2019_Sample.csv')
+#Head of the Data to show topmost data
+head(data)
+#Tail of the Data
+tail(data)
+#plot a histogam to show data distribution
+par(mfrow = c(1,1)) # Set up the graphics screen
+# This sets up the graphics screen to have two rows and two columns
+# By changing the numbers you can change the partitioning.
+# Now let us aadd some nice labels.
+hist(data1$Scooter Xpress, main = "ycoordinate",xlab = "xcoordinate",col = "blue", breaks = 12)
